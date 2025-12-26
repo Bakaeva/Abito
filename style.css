@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-style: normal;
     line-height: normal;
 }
@@ -14,6 +15,26 @@ body {
     max-width: 1160px;
     padding: 0 7px;
     margin: 0 auto;
+}
+
+.btn {
+    line-height: 16px;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: rgba(10, 20, 58, 1);
+}
+
+.btn-primary {
+    background-color: rgba(37, 110, 235, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-left: 10px;
 }
 
 .header {
@@ -41,31 +62,57 @@ body {
     color: rgba(10, 20, 58, 1);
 }
 
-.btn {
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-outline {
-    background-color: transparent;
-    color: rgba(10, 20, 58, 1);
-}
-
-.btn-primary {
-    background-color: rgba(37, 110, 235, 1);
-    color: rgba(255, 255, 255, 1);
-    margin-left: 10px;
-}
-
 .header-burger {
     width: 30px;
     height: 15px;
     display: none;
+}
+
+.search {
+    margin-bottom: 45px;
+}
+
+.search-box {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    background-color: rgba(37, 110, 235, 1);
+    padding: 3px;
+}
+
+.search-box input {
+    flex-grow: 1;
+    padding: 16px 21px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: rgba(10, 20, 58, 1);
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 0;
+}
+
+.search-box input ::placeholder {
+    opacity: 0.4;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.search-btn__icon {
+    width: 15px;
+    height: 17px;
+}
+
+.search-btn__text {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 @media (max-width:1200px) {
@@ -89,7 +136,11 @@ body {
         display: none;
     }
 
-    .header-burger img {
+    .header-burger {
         display: block;
+    }
+
+    .search-btn__text {
+        display: none;
     }
 }
