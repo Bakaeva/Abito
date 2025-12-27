@@ -323,6 +323,10 @@ body {
         width: 100%;
     }
 
+    .content-main__product-info {
+        width: 100%;
+    }
+
     .content-side {
         width: 100%;
         min-width: none;
